@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Imraan Hendricks" />
+    <meta
+      name="description"
+      content="A web page that generates and displays 20 lines of text based on specified conditions using JavaScript." />
+    <title>Bits and Bots</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link href="./assets/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Bits and Bots</h1>
+      <p>
+        A web page that generates and displays 20 lines of text based on
+        specified conditions using JavaScript.
+      </p>
+
+      <hr />
+    </header>
+
+    <main class="container">
+      <aside>
+        <h2>Generate:</h2>
+        <ul class="menu">
+          <li class="menu-item active">with variables</li>
+          <li class="menu-item">without variables</li>
+          <li class="menu-item">using array</li>
+          <li class="menu-item">using for each loop</li>
+          <li class="menu-item">using while loop</li>
+          <li class="menu-item">using recursion</li>
+        </ul>
+        <div class="technologies">
+          <img src="./assets/icons/HTML.svg" alt="HTML icon" />
+          <img src="./assets/icons/JS.svg" alt="javascript icon" />
+          <img src="./assets/icons/CSS.svg" alt="CSS icon" />
+        </div>
+      </aside>
+
+      <section>
+        <h3>Output:</h3>
+        <div class="cards">
+          <div class="card active">
+            <div id="generate-with-variables"></div>
+          </div>
+
+          <div class="card">
+            <div id="generate-without-variables"></div>
+          </div>
+
+          <div class="card">
+            <div id="generate-using-array"></div>
+          </div>
+
+          <div class="card">
+            <div id="generate-using-for-each"></div>
+          </div>
+
+          <div class="card">
+            <div id="generate-using-while-loop"></div>
+          </div>
+
+          <div class="card">
+            <div id="generate-using-recursion"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/scripts.js" defer></script>
+  </body>
+</html>
