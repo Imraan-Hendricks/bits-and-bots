@@ -1,6 +1,6 @@
 # Bits And Bots
 
-This project demonstrates generating and displaying 20 lines of text on a webpage based on specified conditions using JavaScript.
+This project demonstrates generating and displaying lines of text on a webpage based on specified conditions using JavaScript.
 
 ## Usage
 
