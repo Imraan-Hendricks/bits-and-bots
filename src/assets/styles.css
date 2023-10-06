@@ -68,22 +68,17 @@ header {
   border-radius: 0.25rem;
 }
 
-.technologies {
-  margin-top: 2rem;
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
 main {
   display: flex;
   gap: 2rem;
   width: max-content;
+  flex-direction: column;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   main {
     gap: 4rem;
+    flex-direction: row;
   }
 }
 
@@ -115,44 +110,18 @@ main {
   color: var(--primary-color);
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+.technologies {
+  margin-top: 2rem;
+  display: flex;
   gap: 2rem;
-  width: max-content;
+  align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .cards {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@media only screen and (min-width: 1536px) {
-  .cards {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-.card {
-  border: solid 1px var(--border-color);
-  border-radius: 0.375rem;
-  padding: 2rem;
-  transition: all 0.2s ease-in;
-}
-
-.card div {
+.results {
   display: grid;
-  line-height: 1.25;
+  gap: 1rem;
 }
 
-.card.active {
-  color: #ffffff;
-  background-color: var(--primary-color);
+#output {
+  line-height: 1.5;
 }

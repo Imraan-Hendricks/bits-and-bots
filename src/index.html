@@ -15,24 +15,25 @@
     <header class="container">
       <h1>Bits and Bots</h1>
       <p>
-        A web page that generates and displays 20 lines of text based on
-        specified conditions using JavaScript.
+        A web page that generates and displays lines of text based on specified
+        conditions using JavaScript.
       </p>
-
       <hr />
     </header>
 
     <main class="container">
       <aside>
         <h2>Generated:</h2>
-        <ul class="menu">
-          <li class="menu-item active">with variables</li>
-          <li class="menu-item">without variables</li>
-          <li class="menu-item">using array</li>
-          <li class="menu-item">using for each loop</li>
-          <li class="menu-item">using while loop</li>
-          <li class="menu-item">using recursion</li>
-        </ul>
+        <nav>
+          <ul class="menu">
+            <li class="menu-item active">with variables</li>
+            <li class="menu-item">without variables</li>
+            <li class="menu-item">using array</li>
+            <li class="menu-item">using for each loop</li>
+            <li class="menu-item">using while loop</li>
+            <li class="menu-item">using recursion</li>
+          </ul>
+        </nav>
         <div class="technologies">
           <img src="./assets/icons/HTML.svg" alt="HTML icon" />
           <img src="./assets/icons/JS.svg" alt="javascript icon" />
@@ -40,32 +41,14 @@
         </div>
       </aside>
 
-      <section>
-        <h3>Output:</h3>
-        <div class="cards">
-          <div class="card active">
-            <div id="generate-with-variables"></div>
-          </div>
-
-          <div class="card">
-            <div id="generate-without-variables"></div>
-          </div>
-
-          <div class="card">
-            <div id="generate-using-array"></div>
-          </div>
-
-          <div class="card">
-            <div id="generate-using-for-each"></div>
-          </div>
-
-          <div class="card">
-            <div id="generate-using-while-loop"></div>
-          </div>
-
-          <div class="card">
-            <div id="generate-using-recursion"></div>
-          </div>
+      <section class="results">
+        <div>
+          <h3>Code</h3>
+          <code id="code"> </code>
+        </div>
+        <div>
+          <h3>Output:</h3>
+          <div id="output"></div>
         </div>
       </section>
     </main>
